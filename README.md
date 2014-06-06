@@ -3,6 +3,8 @@ Windows Push Sample
 
 In order to use Windows Push Sample (Native push notifications sample for Windows) with Telerik Backend Services you need to enable push notifications for Windows. This can be done by opening your Backend Services application from your Telerik Platform account and then open **Settings -> Push notifications** and choose Windows you should set Package Security ID and Client Secret of your Windows Store Dashboard. For more information you can refer to [this MSDN article](http://msdn.microsoft.com/en-us/library/windows/apps/hh913756.aspx).
 
+Second step is to set your Telerik Backend Services API Key. Open MainPage.xaml.cs file and find the string "your-api-key-here" and replace it with your key. It can be found after logging to Telerik Platform, open your Backend Services application and click on API Keys link on the left column.
+
 > Note: That Package SID should be equal to the Package info of your device (desktop) app. For a windows store app this information is stored within "Package.appxmanifest" file. Visual studio provides an UI which helps in the process of editing it. The easiest way to connect your Windows Store Dashboard App to your desktop app is through Visual Studio menu **PROJECT -> Store -> Associate App With the Store ...** - then you should log into with your Windows Dev Center account credentials and select your application.
 
 However for the sake of the example this application comes with a predefined package info (Windows8PushApp) owned by Telerik, so all you need is to set: "ms-app://s-1-15-2-3157833167-2319104520-3008724778-1960889256-2485977247-996848071-3039990472" as Package SID and "fIpx0SSm9Dbrnk4gmOkdjRCAGdrXiapc" as Client Secret within your Telerik Backend Services application. 
