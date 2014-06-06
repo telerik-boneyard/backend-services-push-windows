@@ -126,7 +126,6 @@
                    VerticalAlignment="Bottom"/>
         <Image x:Name="logo" Grid.Row="2"
                Source="Assets/tile_telerik_platform_150x150.png"
-               VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="150" Height="150"
-               ImageFailed="Image_ImageFailed"/>
+               VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="150" Height="150"/>
     </Grid>
 </Page>

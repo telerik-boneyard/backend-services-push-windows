@@ -136,10 +136,9 @@ namespace WindowsPushSample
 		
         private const String SecondaryTileId = "SecondaryTileId";
 
-        private const String BackendServicesApiKey = "l7W44IWjTGDq0V7l";
         EverliveApp everliveApp;
 
-        //private const String BackendServicesApiKey = "your-api-key-here";
+        private const String BackendServicesApiKey = "your-api-key-here";
 
         public MainPage()
         {
@@ -447,11 +446,6 @@ namespace WindowsPushSample
             {
                 this.IsSecondaryTilePinned = false;
             }
-        }
-
-        private void Image_ImageFailed(object sender, ExceptionRoutedEventArgs e)
-        {
-
         }
     }
 }
