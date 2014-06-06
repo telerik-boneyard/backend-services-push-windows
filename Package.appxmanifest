@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="Telerik.Windows8PushApp" Publisher="CN=A6114CDA-C037-48BD-B8B6-9F8020555726" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>Windows8PushApp</DisplayName>
+    <PublisherDisplayName>Telerik</PublisherDisplayName>
+    <Logo>Assets\tile_telerik_platform_50x50.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="WindowsPushSample.App">
+      <VisualElements DisplayName="Windows Push Sample" Logo="Assets\tile_telerik_platform_150x150.png" SmallLogo="Assets\tile_telerik_platform_30x30.png" Description="WindowsPushSample" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
+        <LockScreen Notification="badge" BadgeLogo="Assets\tile_telerik_platform_24x24.png" />
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\tile_telerik_platform_620x300.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" StartPage="MainPage">
+          <BackgroundTasks>
+            <Task Type="pushNotification" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
