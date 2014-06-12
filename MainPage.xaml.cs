@@ -155,7 +155,6 @@ namespace WindowsPushSample
             else
             {
                 everliveApp = new EverliveApp(MainPage.BackendServicesApiKey);
-                everliveApp.AppSettings.ServiceUrl = "localhost:3000";
                 this.CheckRegistration();
                 this.CheckSecondaryTiles();
                 this.CheckSecondaryTileRegistration();
