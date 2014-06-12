@@ -4,7 +4,7 @@
   <Properties>
     <DisplayName>Windows8PushApp</DisplayName>
     <PublisherDisplayName>Telerik</PublisherDisplayName>
-    <Logo>Assets\tile_telerik_platform_50x50.png</Logo>
+    <Logo>Assets\logo50x50.png</Logo>
   </Properties>
   <Prerequisites>
     <OSMinVersion>6.2.1</OSMinVersion>
@@ -15,10 +15,10 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="WindowsPushSample.App">
-      <VisualElements DisplayName="Windows Push Sample" Logo="Assets\tile_telerik_platform_150x150.png" SmallLogo="Assets\tile_telerik_platform_30x30.png" Description="WindowsPushSample" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
-        <LockScreen Notification="badge" BadgeLogo="Assets\tile_telerik_platform_24x24.png" />
+      <VisualElements DisplayName="Windows Push Sample" Logo="Assets\logo150x150.png" SmallLogo="Assets\logo30x30.png" Description="WindowsPushSample" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
+        <LockScreen Notification="badge" BadgeLogo="Assets\logo24x24.png" />
         <DefaultTile ShowName="allLogos" />
-        <SplashScreen Image="Assets\tile_telerik_platform_620x300.png" />
+        <SplashScreen Image="Assets\logo620x300.png" />
       </VisualElements>
       <Extensions>
         <Extension Category="windows.backgroundTasks" StartPage="MainPage">

@@ -114,24 +114,19 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Logo.png" />
-    <Content Include="Assets\SmallLogo.png" />
-    <Content Include="Assets\SplashScreen.png" />
-    <Content Include="Assets\SplashScreen.scale-100.png" />
-    <Content Include="Assets\StoreLogo.png" />
-    <Content Include="Assets\tile_telerik_platform_150x150.png">
+    <Content Include="Assets\logo150x150.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\tile_telerik_platform_24x24.png">
+    <Content Include="Assets\logo24x24.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\tile_telerik_platform_30x30.png">
+    <Content Include="Assets\logo30x30.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\tile_telerik_platform_50x50.png">
+    <Content Include="Assets\logo50x50.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\tile_telerik_platform_620x300.png">
+    <Content Include="Assets\logo620x300.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Package.StoreAssociation.xml" />

@@ -12,6 +12,7 @@ using Telerik.Everlive.Sdk.Core.Transport;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI;
+using Windows.UI.Notifications;
 using Windows.UI.Popups;
 using Windows.UI.StartScreen;
 using Windows.UI.Xaml;
@@ -155,7 +156,6 @@ namespace WindowsPushSample
             else
             {
                 everliveApp = new EverliveApp(MainPage.BackendServicesApiKey);
-                everliveApp.AppSettings.ServiceUrl = "localhost:3000";
                 this.CheckRegistration();
                 this.CheckSecondaryTiles();
                 this.CheckSecondaryTileRegistration();
@@ -295,8 +295,8 @@ namespace WindowsPushSample
 
         private async void OnPinSecondTileClick(object sender, RoutedEventArgs e)
         {
-            Uri logo = new Uri("ms-appx:///Assets/tile_telerik_platform_150x150.png");
-            Uri smallLogo = new Uri("ms-appx:///Assets/tile_telerik_platform_50x50.png");
+            Uri logo = new Uri("ms-appx:///Assets/logo150x150.png");
+            Uri smallLogo = new Uri("ms-appx:///Assets/logo24x24.png");
 
             // During creation of secondary tile, an application may set additional arguments on the tile that will be passed in during activation.
             // These arguments should be meaningful to the application. In this sample, we'll pass in the date and time the secondary tile was pinned.
@@ -354,7 +354,7 @@ namespace WindowsPushSample
             //          "template": "TileSquare150x150PeekImageAndText01",
             //          "fallback": "TileSquarePeekImageAndText01"
             //          "text": ["WindowsPushSample", "Text2", "Text3", "Text4"],
-            //          "image": [".\\Assets\\tile_telerik_platform_150x150.png"]
+            //          "image": [".\\Assets\\logo150x150.png"]
             //      },
             //      "SecondaryTileId": MainPage.SecondaryTileId
             //}
