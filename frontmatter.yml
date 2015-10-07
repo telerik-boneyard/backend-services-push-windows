@@ -1,0 +1,7 @@
+title: Basic Push Windows Store
+slug: sample-backend-services-push-win-store
+position: 1
+publish: true
+page_title: Basic Push Notifications Sample App for Windows Store | Telerik Platform
+description: A simple native Windows Store app that has the single purpose of receiving push notifications sent from Telerik Platform.
+tags: Telerik, Sample App, Application, Windows Store, .NET, C#, push, notifications, BaaS
