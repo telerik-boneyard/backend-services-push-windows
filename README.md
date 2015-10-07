@@ -70,7 +70,7 @@ Setting|Value
 Package Security Identifier (Package SID)|ms-app://s-1-15-2-3157833167-2319104520-3008724778-1960889256-2485977247-996848071-3039990472
 Client Secret|fIpx0SSm9Dbrnk4gmOkdjRCAGdrXiapc
 
-If you intend to use your own values, keep in mind that the Package SID must be equal to your app's Package info which is set to Telerik's app by default. For a Windows Store app this information is stored within `Package.appxmanifest`. The easiest way to connect your Windows Store Dashboard App to your desktop app is through Visual Studio. Go to **Project > Store > Associate App With the Store ...**, log in with your Windows Dev Center account, and finally select your application.
+If you intend to use your own values, keep in mind that the Package SID must be equal to your app's Package info which is set to Telerik's app by default. For a Windows Store app this information is stored within `Package.appxmanifest`. The easiest way to connect your Windows Store Dashboard App to your desktop app is through Visual Studio. Go to **Project > Store > Associate App With the Store...**, log in with your Windows Dev Center account, and finally select your application.
 
 ## Running the Sample
 
