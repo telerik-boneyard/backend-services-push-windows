@@ -6,6 +6,7 @@
 * [Requirements](#requirements)
 * [Configuration](#configuration)
 * [Running the Sample](#running-the-sample)
+* [Testing the Sample](#testing-the-sample)
 
 # Overview
 
@@ -15,17 +16,6 @@ The sample app utilizes the following Telerik products and SDKs:
 
 - [Telerik Backend Services](http://docs.telerik.com/platform/backend-services/)&mdash;this is the backend of Telerik Platform where you can store data, files, and user accounts as well as set up and send push notifications
 - [Telerik Backend Services .NET SDK](http://docs.telerik.com/platform/backend-services/dotnet/getting-started-dotnet-sdk)&mdash;to connect the app to Telerik Backend Services
-
-## Features
-
-The app's upper segment is used to send a toast push notification containing a sample text:
-
-- Click Register to automatically register the device with Telerik Backend Services.
-- Fill in the Toast Message field and click Send Push Notification to send a toast notification based on the "ToastText01" template and "Toast Message" as text. For a complete set of toast templates, refer to [Windows Dev Center](http://msdn.microsoft.com/en-us/library/windows/apps/hh761494.aspx).
-
-The app's lower segment shows how to pin, register, and send a push notification to a secondary tile:
-- Pin a secondary tile by pressing the Pin Second Tile button and approve the action.
-- Register the device with Telerik Backend Services, fill all required fields and click Send Push Second Tile. This sends a tile notification based on the "TileSquarePeekImageAndText01" template which requires an image (.png 150 x 150px) and 4 text fields. For a complete set of tile templates, refer to [Windows Dev Center](http://msdn.microsoft.com/en-us/library/windows/apps/hh761491.aspx).
 
 # Requirements
 
@@ -81,3 +71,13 @@ Once the app is configured, you can run it on a real device from within Visual S
 > Ensure that the device that you are using has Internet connectivity when running the sample.
 
 
+# Testing the Sample
+
+The app's upper segment is used to send a toast push notification containing a sample text:
+
+- Click Register to automatically register the device with Telerik Backend Services.
+- Fill in the Toast Message field and click Send Push Notification to send a toast notification based on the "ToastText01" template and "Toast Message" as text. For a complete set of toast templates, refer to [Windows Dev Center](http://msdn.microsoft.com/en-us/library/windows/apps/hh761494.aspx).
+
+The app's lower segment shows how to pin, register, and send a push notification to a secondary tile:
+- Pin a secondary tile by pressing the Pin Second Tile button and approve the action.
+- Register the device with Telerik Backend Services, fill all required fields and click Send Push Second Tile. This sends a tile notification based on the "TileSquarePeekImageAndText01" template which requires an image (.png 150 x 150px) and 4 text fields. For a complete set of tile templates, refer to [Windows Dev Center](http://msdn.microsoft.com/en-us/library/windows/apps/hh761491.aspx).
