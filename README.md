@@ -7,7 +7,7 @@
 * [Configuration](#configuration)
 * [Running the Sample](#running-the-sample)
 
-## Overview
+# Overview
 
 This repository contains a basic sample app that can receive push notifications sent from its Telerik Platform backend. It is a native Windows Store app built using .NET and Visual Studio.
 
@@ -16,7 +16,7 @@ The sample app utilizes the following Telerik products and SDKs:
 - [Telerik Backend Services](http://docs.telerik.com/platform/backend-services/)&mdash;this is the backend of Telerik Platform where you can store data, files, and user accounts as well as set up and send push notifications
 - [Telerik Backend Services .NET SDK](http://docs.telerik.com/platform/backend-services/dotnet/getting-started-dotnet-sdk)&mdash;to connect the app to Telerik Backend Services
 
-### Features
+## Features
 
 The app's upper segment is used to send a toast push notification containing a sample text:
 
@@ -27,7 +27,7 @@ The app's lower segment shows how to pin, register, and send a push notification
 - Pin a secondary tile by pressing the Pin Second Tile button and approve the action.
 - Register the device with Telerik Backend Services, fill all required fields and click Send Push Second Tile. This sends a tile notification based on the "TileSquarePeekImageAndText01" template which requires an image (.png 150 x 150px) and 4 text fields. For a complete set of tile templates, refer to [Windows Dev Center](http://msdn.microsoft.com/en-us/library/windows/apps/hh761491.aspx).
 
-## Requirements
+# Requirements
 
 Before you begin, you need to ensure that you have the following:
 
@@ -36,13 +36,13 @@ Ensure that you can log in to a Telerik Platform account. This can be a free tri
 - **A Telerik Backend Services project** You can use an existing project or create a new one. 
 - **Microsoft Visual Studio** You need it to load the Visual Studio project file.
 
-## Configuration
+# Configuration
 
 The sample app comes fully functional, but to see it in action you must link it to your own Telerik Platform account.
 
 What you need to set:
 
-### API Key for Telerik Backend Services
+## API Key for Telerik Backend Services
 
 This is a unique string that links the sample mobile app to a project in Telerik Backend Services where all the data is read from/saved.
 
@@ -51,7 +51,7 @@ This is a unique string that links the sample mobile app to a project in Telerik
 3. Open the `MainPage.xaml.cs` file in Visual Studio.
 4. Find the `BackendServicesApiKey` literal and replace its value with the actual Backend Services API Key that you acquired earlier.
 
-### Push Notifications on the Backend
+## Push Notifications on the Backend
 
 To enable Telerik Backend Services to send push notifications, you need to configure it, entering a Package SID and a Client Secret that you need to acquire from Microsoft.
 
@@ -72,7 +72,7 @@ Client Secret|fIpx0SSm9Dbrnk4gmOkdjRCAGdrXiapc
 
 If you intend to use your own values, keep in mind that the Package SID must be equal to your app's Package info which is set to Telerik's app by default. For a Windows Store app this information is stored within `Package.appxmanifest`. The easiest way to connect your Windows Store Dashboard App to your desktop app is through Visual Studio. Go to **Project > Store > Associate App With the Store...**, log in with your Windows Dev Center account, and finally select your application.
 
-## Running the Sample
+# Running the Sample
 
 Once the app is configured, you can run it on a real device from within Visual Studio.
 
