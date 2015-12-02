@@ -146,10 +146,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Telerik.Everlive.Sdk.WindowsStore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\tmp\sdk\net\EverliveSDK.WindowsStore\Telerik.Everlive.Sdk.WindowsStore.dll</HintPath>
-    </Reference>
+    <Reference Include="Telerik.Everlive.Sdk.WindowsStore">		
+      <HintPath>lib\Telerik.Everlive.Sdk.WindowsStore.dll</HintPath>		
+     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
