@@ -33,27 +33,27 @@ The sample app comes fully functional, but to see it in action you must link it 
 
 What you need to set:
 
-## API Key for Telerik Backend Services
+## App Id for Telerik Platform
 
 This is a unique string that links the sample mobile app to a project in Telerik Backend Services where all the data is read from/saved.
 
-1. Open your Telerik Backend Services project and go to **Overview > API Keys**.
-2. Take note of your API Key.
+1. Open your Telerik Backend Services project and go to **Settings**.
+2. Take note of your App ID.
 3. Open the `MainPage.xaml.cs` file in Visual Studio.
-4. Find the `BackendServicesApiKey` literal and replace its value with the actual Backend Services API Key that you acquired earlier.
+4. Find the `TelerikPlatformAppId` literal and replace its value with the actual Telerik Platform App ID that you acquired earlier.
 
 ## Push Notifications on the Backend
 
-To enable Telerik Backend Services to send push notifications, you need to configure it, entering a Package SID and a Client Secret that you need to acquire from Microsoft.
+To enable Telerik Platform to send push notifications, you need to configure it, entering a Package SID and a Client Secret that you need to acquire from Microsoft.
 
 To help you run the sample faster, we've pre-initialized it to use Package SID and Client Secret owned by Telerik. These are the steps that you need to complete on your own:
 
 > Be aware that these values must be used only for testing purposes. Telerik could disable this Windows Store application at any time and without notice.
 
 1. Log in to Telerik Platform.
-2. Go to your application and then enter the Backend Services project that you want to use for this sample app.
-3. Ensure that the Push Notifications service is enabled.
-4. Navigate to **Push Notifications > Settings**.
+2. Go to your application.
+3. Ensure that the Push service is enabled.
+4. Navigate to **Push > Settings**.
 5. Click the Windows check box an enter these values:
 
 Setting|Value

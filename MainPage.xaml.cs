@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Telerik.Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -139,15 +139,15 @@ namespace WindowsPushSample
 
         EverliveApp everliveApp;
 
-        private const String BackendServicesApiKey = "your-api-key-here";
+        private const String TelerikPlatformAppId = "your-app-id-here";
 
         public MainPage()
         {
             this.InitializeComponent();
             this.DataContext = this;
-            if (MainPage.BackendServicesApiKey.StartsWith("your"))
+            if (MainPage.TelerikPlatformAppId.StartsWith("your"))
             {
-                MessageDialog msgDialog = new MessageDialog("You need to set a valid Telerik Backend Services API Key!", "Windows Push Sample");
+                MessageDialog msgDialog = new MessageDialog("You need to set a valid Telerik Platform App ID!", "Windows Push Sample");
                 UICommand okBtn = new UICommand("OK");
                 okBtn.Invoked = OkBtnClick;
                 msgDialog.Commands.Add(okBtn);
@@ -155,7 +155,7 @@ namespace WindowsPushSample
             }
             else
             {
-                everliveApp = new EverliveApp(MainPage.BackendServicesApiKey);
+                everliveApp = new EverliveApp(MainPage.TelerikPlatformAppId);
                 this.CheckRegistration();
                 this.CheckSecondaryTiles();
                 this.CheckSecondaryTileRegistration();
