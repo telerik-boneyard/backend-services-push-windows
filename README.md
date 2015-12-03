@@ -1,7 +1,5 @@
 # Basic Push Notifications Sample App for Windows Store
 
-<a href="https://github.com/telerik/backend-services-push-windows" target="_blank"><img style="padding-left:20px" src="http://docs.telerik.com/platform/samples/images/get-github.png" alt="Get from GitHub" title="Get from GitHub"></a>
-
 <a id="top"></a>
 * [Overview](#overview)
 * [Requirements](#requirements)
@@ -13,10 +11,7 @@
 
 This repository contains a basic sample app that can receive push notifications sent from its Telerik Platform backend. It is a native Windows Store app built using .NET and Visual Studio.
 
-The sample app utilizes the following Telerik products and SDKs:
-
-- [Telerik Backend Services](http://docs.telerik.com/platform/backend-services/)&mdash;this is the backend of Telerik Platform where you can store data, files, and user accounts as well as set up and send push notifications
-- [Telerik Backend Services .NET SDK](http://docs.telerik.com/platform/backend-services/dotnet/getting-started-dotnet-sdk)&mdash;to connect the app to Telerik Backend Services
+The sample app utilizes the [Telerik Backend Services .NET SDK](http://docs.telerik.com/platform/backend-services/dotnet/getting-started-dotnet-sdk) to connect the app to Telerik Platform.
 
 # Requirements
 
@@ -24,20 +19,21 @@ Before you begin, you need to ensure that you have the following:
 
 - **An active [Telerik Platform](https://platform.telerik.com) account**
 Ensure that you can log in to a Telerik Platform account. This can be a free trial account.
-- **A Telerik Backend Services project** You can use an existing project or create a new one. 
 - **Microsoft Visual Studio** You need it to load the Visual Studio project file.
 
 # Configuration
 
-The sample app comes fully functional, but to see it in action you must link it to your own Telerik Platform account.
+The sample app comes fully functional, but to see it in action you must link it to a Telerik Platform app.
 
 What you need to set:
 
-## App Id for Telerik Platform
+## App ID for Telerik Platform
 
-This is a unique string that links the sample mobile app to a project in Telerik Backend Services where all the data is read from/saved.
+This is a unique string that links the sample mobile app to a Telerik Platform app where all the data is read from/saved.
 
-1. Open your Telerik Backend Services project and go to **Settings**.
+1. Log in to Telerik Platform.
+2. Create a new app or open an existing one.
+4. Go to the **Settings** tab.
 2. Take note of your App ID.
 3. Open the `MainPage.xaml.cs` file in Visual Studio.
 4. Find the `TelerikPlatformAppId` literal and replace its value with the actual Telerik Platform App ID that you acquired earlier.
@@ -52,8 +48,8 @@ To help you run the sample faster, we've pre-initialized it to use Package SID a
 
 1. Log in to Telerik Platform.
 2. Go to your application.
-3. Ensure that the Push service is enabled.
-4. Navigate to **Push > Settings**.
+3. Go to the **Notifications** tab and ensure that it is enabled.
+4. Navigate to **Push Notifications > Push Settings**.
 5. Click the Windows check box an enter these values:
 
 Setting|Value
@@ -76,7 +72,7 @@ Once the app is configured, you can run it on a real device from within Visual S
 
 The app's upper segment is used to send a toast push notification containing a sample text:
 
-- Click Register to automatically register the device with Telerik Backend Services.
+- Click Register to automatically register the device with Telerik Platform.
 - Fill in the Toast Message field and click Send Push Notification to send a toast notification based on the "ToastText01" template and "Toast Message" as text. For a complete set of toast templates, refer to [Windows Dev Center](http://msdn.microsoft.com/en-us/library/windows/apps/hh761494.aspx).
 
 The app's lower segment shows how to pin, register, and send a push notification to a secondary tile:
