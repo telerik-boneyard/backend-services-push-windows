@@ -34,7 +34,7 @@ This is a unique string that links the sample mobile app to a Telerik Platform a
 1. Log in to Telerik Platform.
 2. Create a new app or open an existing one.
 4. Go to the **Settings** tab.
-2. Take note of your App ID.
+2. Take note of your **App ID**.
 3. Open the `MainPage.xaml.cs` file in Visual Studio.
 4. Find the `TelerikPlatformAppId` literal and replace its value with the actual Telerik Platform App ID that you acquired earlier.
 
